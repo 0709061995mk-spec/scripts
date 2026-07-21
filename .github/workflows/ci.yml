@@ -5,7 +5,14 @@ on: [push]                       # the trigger
 
 jobs:
   build:
+    name: Build stage
     runs-on: ubuntu-latest       # the runner
     steps:
       - name: say hello
         run: echo "Pipeline is running!"
+  tests:
+    name: Test stage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: echo "Running tests..."
