@@ -11,7 +11,7 @@ jobs:
       - name: say hello
         run: echo "Pipeline is running!"
   tests:
-     depends-on: build
+    depends-on: build
     name: Test stage
     runs-on: ubuntu-latest
     steps:
