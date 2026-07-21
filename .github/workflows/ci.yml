@@ -1,0 +1,11 @@
+# .github/workflows/ci.yml
+name: CI
+
+on: [push]                       # the trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest       # the runner
+    steps:
+      - name: say hello
+        run: echo "Pipeline is running!"
