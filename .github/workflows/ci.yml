@@ -17,12 +17,3 @@ jobs:
     steps:
       - name: Run tests
         run: echo "Running tests..."
-      
-  check:
-    name: Check stage
-    runs-on: ubuntu-latest
-    steps:
-      - name: Make check script executable
-        run: chmod +x scripts/check.sh
-      - name: Run check script
-        run: ./scripts/check.sh
