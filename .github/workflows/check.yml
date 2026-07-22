@@ -1,4 +1,4 @@
       - name: Make check script executable
-        run: chmod +x scripts/check.sh
+        run: chmod +x check.sh
       - name: Run check script
-        run: ./scripts/check.sh
+        run: ./check.sh
